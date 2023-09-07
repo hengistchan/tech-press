@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar.json";
+import nav from "./nav.json";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,11 +8,7 @@ export default defineConfig({
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "You-Dont-Know-JS-1", link: "/You-Dont-Know-JS-1/" },
-      { text: "You-Dont-Know-JS-2", link: "/You-Dont-Know-JS-2/" },
-    ],
+    nav: Object.values(nav),
     sidebar: sidebar,
     socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
   },

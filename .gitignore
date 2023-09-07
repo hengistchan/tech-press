@@ -1,3 +1,4 @@
 node_modules
 temp
 .vitepress/cache
+.vitepress/dist

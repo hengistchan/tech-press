@@ -510,5 +510,293 @@
         }
       ]
     }
+  ],
+  "/You-Dont-Know-JS-1-CN/": [
+    {
+      "text": "Preface",
+      "link": "/You-Dont-Know-JS-1-CN/"
+    },
+    {
+      "text": "Up & going",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/apA.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/ch3.md"
+        },
+        {
+          "text": "foreword",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/foreword.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/up & going/toc.md"
+        }
+      ]
+    },
+    {
+      "text": "Scope & closures",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/apA.md"
+        },
+        {
+          "text": "apB",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/apB.md"
+        },
+        {
+          "text": "apC",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/apC.md"
+        },
+        {
+          "text": "apD",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/apD.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/ch3.md"
+        },
+        {
+          "text": "ch4",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/ch4.md"
+        },
+        {
+          "text": "ch5",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/ch5.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/scope & closures/toc.md"
+        }
+      ]
+    },
+    {
+      "text": "This & object prototypes",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/apA.md"
+        },
+        {
+          "text": "apB",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/apB.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch3.md"
+        },
+        {
+          "text": "ch4",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch4.md"
+        },
+        {
+          "text": "ch5",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch5.md"
+        },
+        {
+          "text": "ch6",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/ch6.md"
+        },
+        {
+          "text": "foreword",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/foreword.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/this & object prototypes/toc.md"
+        }
+      ]
+    },
+    {
+      "text": "Types & grammar",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/apA.md"
+        },
+        {
+          "text": "apB",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/apB.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/ch3.md"
+        },
+        {
+          "text": "ch4",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/ch4.md"
+        },
+        {
+          "text": "ch5",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/ch5.md"
+        },
+        {
+          "text": "foreword",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/foreword.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/types & grammar/toc.md"
+        }
+      ]
+    },
+    {
+      "text": "Async & performance",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/apA.md"
+        },
+        {
+          "text": "apB",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/apB.md"
+        },
+        {
+          "text": "apC",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/apC.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch3.md"
+        },
+        {
+          "text": "ch4",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch4.md"
+        },
+        {
+          "text": "ch5",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch5.md"
+        },
+        {
+          "text": "ch6",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/ch6.md"
+        },
+        {
+          "text": "foreword",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/foreword.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/async & performance/toc.md"
+        }
+      ]
+    },
+    {
+      "text": "Es6 & beyond",
+      "items": [
+        {
+          "text": "README",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/README.md"
+        },
+        {
+          "text": "apA",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/apA.md"
+        },
+        {
+          "text": "ch1",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch1.md"
+        },
+        {
+          "text": "ch2",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch2.md"
+        },
+        {
+          "text": "ch3",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch3.md"
+        },
+        {
+          "text": "ch4",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch4.md"
+        },
+        {
+          "text": "ch5",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch5.md"
+        },
+        {
+          "text": "ch6",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch6.md"
+        },
+        {
+          "text": "ch7",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch7.md"
+        },
+        {
+          "text": "ch8",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/ch8.md"
+        },
+        {
+          "text": "foreword",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/foreword.md"
+        },
+        {
+          "text": "toc",
+          "link": "/You-Dont-Know-JS-1-CN/es6 & beyond/toc.md"
+        }
+      ]
+    }
   ]
 }

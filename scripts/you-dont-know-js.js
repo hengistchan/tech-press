@@ -13,6 +13,7 @@ const includeSingleFiles = [["preface.md", "index.md"]].reduce((prev, file) => {
   return prev;
 }, {});
 const sidebarPath = `.vitepress/sidebar.json`;
+const navPath = `.vitepress/nav.json`;
 
 async function init(name, branch, category) {
   const initialSidebar = [
@@ -81,6 +82,14 @@ async function init(name, branch, category) {
       });
     sidebarJson[`/${name}/`] = [...initialSidebar, ...sidebar];
     return JSON.stringify(sidebarJson, null, 2);
+  });
+  write(navPath, (content) => {
+    const navJson = JSON.parse(content);
+    navJson[`${name}`] = {
+      text: name.split("-").join(" "),
+      link: `/${name}/`,
+    };
+    return JSON.stringify(navJson, null, 2);
   });
   rm(tempPath);
 }
