@@ -798,5 +798,35 @@
         }
       ]
     }
+  ],
+  "/Interview/": [
+    {
+      "text": "基础面试题",
+      "link": "/Interview/basic"
+    },
+    {
+      "text": "进阶面试题",
+      "link": "/Interview/high"
+    },
+    {
+      "text": "高频面试题",
+      "link": "/Interview/high-level"
+    },
+    {
+      "text": "高频手写题",
+      "link": "/Interview/hand-write"
+    },
+    {
+      "text": "综合面试题",
+      "link": "/Interview/all-in-one"
+    },
+    {
+      "text": "性能优化篇",
+      "link": "/Interview/performance"
+    },
+    {
+      "text": "设计模式篇",
+      "link": "/Interview/arch"
+    }
   ]
 }
