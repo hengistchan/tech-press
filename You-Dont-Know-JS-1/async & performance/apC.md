@@ -1,5 +1,6 @@
 ---
 title: apC | async & performance
+outline: deep
 ---
 # You Don't Know JS: Async & Performance
 # Appendix C: Acknowledgments

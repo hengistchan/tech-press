@@ -1,5 +1,6 @@
 ---
 title: apB | async & performance
+outline: deep
 ---
 # You Don't Know JS: Async & Performance
 # Appendix B: Advanced Async Patterns

@@ -1,5 +1,6 @@
 ---
 title: ch1 | get-started
+outline: deep
 ---
 # You Don't Know JS Yet: Get Started - 2nd Edition
 # Chapter 1: What *Is* JavaScript?

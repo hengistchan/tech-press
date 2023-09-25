@@ -1,5 +1,6 @@
 ---
 title: ch1 | async & performance
+outline: deep
 ---
 # You Don't Know JS: Async & Performance
 # Chapter 1: Asynchrony: Now & Later

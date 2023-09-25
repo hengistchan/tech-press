@@ -1,5 +1,6 @@
 ---
 title: apA | async & performance
+outline: deep
 ---
 # You Don't Know JS: Async & Performance
 # Appendix A: *asynquence* Library
