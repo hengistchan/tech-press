@@ -827,6 +827,10 @@
     {
       "text": "设计模式篇",
       "link": "/Interview/arch"
+    },
+    {
+      "text": "面试指南篇",
+      "link": "/Interview/interview"
     }
   ]
 }

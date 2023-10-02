@@ -30,7 +30,7 @@ outline: deep
 
 *   `title`属性：`title`属性是 HTML 元素通用的属性，适用于各种元素，不仅仅是`<img>`标签。当鼠标滑动到元素上时，浏览器会显示`title`属性的内容，提供额外的信息或解释，帮助用户了解元素的用途或含义。对于`<img>`标签，鼠标悬停在图片上时会显示`title`属性的内容。
     
-*   `alt`属性：`alt`属性是`<img>`标签的特有属性，用于提供图片的替代文本描述。当图片无法加载时，浏览器会显示`alt`属性的内容，或者在可访问性场景中，读屏器会读取`alt`属性的内容。`alt`属性的主要目的是提高图片的可访问性，使无法查看图片的用户也能了解图片的内容或含义。除了纯装饰性图片外，所有`<img>`标签都应该设置有意义的`alt`属性值。
+*   `alt`属性：`alt`属性是`<img>`标签的特有属性，用于提供图片的替代文本描述。当图片无法加载时，浏览器会显示`alt`属性的内容，或者在可访问性场景中，读屏器会读取`alt`属性的内容。`alt`属性的主要目的是提高图片的可访问性，使无法查看图片的用户也能了解图片的内容或含义。除了纯装饰性图片外，**所有`<img>`标签都应该设置有意义的`alt`属性值**。
     
 *   **补充答案：**
     
@@ -46,11 +46,11 @@ outline: deep
             *   GET 方法是 HTTP 的一种请求方法，用于从服务器获取资源。
             *   它是一种幂等的方法，多次发送相同的 GET 请求会返回相同的结果。
         2.  GET 请求和 POST 请求的区别是什么？
-            *   GET 请求将参数附加在 URL 的查询字符串中，而 POST 请求将参数放在请求体中。
+            *   GET 请求将**参数附加在 URL 的查询字符串中**，而 POST 请求将参数放在请求体中。
             *   GET 请求的数据会显示在 URL 中，而 POST 请求的数据不会显示在 URL 中。
-            *   GET 请求一般用于获取数据，而 POST 请求一般用于提交数据。
+            *   **GET 请求一般用于获取数据**，而 POST 请求一般用于提交数据。
         3.  GET 请求可以有请求体吗？
-            *   根据 HTTP 规范，GET 请求不应该有请求体，参数应该通过 URL 的查询字符串传递。
+            *   根据 HTTP 规范，**GET 请求不应该有请求体**，参数应该通过 URL 的查询字符串传递。
         4.  GET 请求的参数如何传递？
             *   GET 请求的参数可以通过 URL 的查询字符串传递，例如：`/api/users?id=123&name=poetry`。
         5.  GET 请求的安全性和幂等性如何保证？
@@ -60,12 +60,12 @@ outline: deep
     *   用途：向`URL`指定的资源提交数据或附加新的数据。
     *   面试可能涉及的问题：
         1.  POST 方法的特点是什么？
-            *   POST 方法是 HTTP 的一种请求方法，用于向服务器提交数据。
-            *   它不是幂等的，多次发送相同的 POST 请求可能会产生不同的结果。
+            *   POST 方法是 HTTP 的一种请求方法，**用于向服务器提交数据**。
+            *   **它不是幂等的，多次发送相同的 POST 请求可能会产生不同的结果**。
         2.  POST 请求和 GET 请求的区别是什么？
-            *   POST 请求将参数放在请求体中，而 GET 请求将参数附加在 URL 的查询字符串中。
+            *   **POST 请求将参数放在请求体中，而 GET 请求将参数附加在 URL 的查询字符串中。**
             *   POST 请求的数据不会显示在 URL 中，而 GET 请求的数据会显示在 URL 中。
-            *   POST 请求一般用于提交数据，而 GET 请求一般用于获取数据。
+            *   **POST 请求一般用于提交数据，而 GET 请求一般用于获取数据。**
         3.  POST 请求的请求体如何传递数据？
             *   POST 请求的数据可以通过请求体以表单形式传递，或者以 JSON 等格式传递。
         4.  POST 请求的安全性和幂等性如何保证？
@@ -84,11 +84,11 @@ outline: deep
             *   PUT 请求的幂等性保证是由服务器端实现的。
             *   服务器端应该根据请求中的资源位置来处理请求，多次发送相同的 PUT 请求会对该位置上的资源进行相同的更新或替换操作。
 *   `HEAD`方法
-    *   只请求页面的首部
+    *   **只请求页面的首部**
 *   `DELETE`方法
-    *   删除服务器上的某资源
+    *   **删除服务器上的某资源**
 *   `OPTIONS`方法
-    *   它用于获取当前`URL`所支持的方法。如果请求成功，会有一个`Allow`的头包含类似`“GET,POST”`这样的信息
+    *   **它用于获取当前`URL`所支持的方法。如果请求成功，会有一个`Allow`的头包含类似`“GET,POST”`这样的信息**
 *   `TRACE`方法
     *   `TRACE`方法被用于激发一个远程的，应用层的请求消息回路
 *   `CONNECT`方法
@@ -137,8 +137,8 @@ outline: deep
     4.  主动方发送 **ACK=Y， Seq=X** 报文
 13.  浏览器检查响应状态吗：是否为 1XX，3XX， 4XX， 5XX，这些情况处理与 2XX 不同
 14.  如果资源可缓存，**进行缓存**
-15.  对响应进行**解码**（例如 gzip 压缩）
-16.  根据资源类型决定如何处理（假设资源为 HTML 文档）
+15.  对响应进行**解码**（例如 gzip 压缩） **Content-Encoding 请求头**
+16.  根据资源类型决定如何处理（假设资源为 HTML 文档） **Content-Type 请求头**
 17.  **解析 HTML 文档，构件 DOM 树，下载资源，构造 CSSOM 树，执行 js 脚本**，这些操作没有严格的先后顺序，以下分别解释
 18.  **构建 DOM 树**：
     1.  **Tokenizing**：根据 HTML 规范将字符流解析为标记
@@ -311,7 +311,7 @@ outline: deep
     *   本地存储 `localStorage` 和 `sessionStorage`
     *   离线应用 `manifest`
     *   桌面通知 `Notifications`
-    *   语意化标签 `article`、`footer`、`header`、`nav`、`section`
+    *   **语意化标签 `article`、`footer`、`header`、`nav`、`section`**
     *   增强表单控件 `calendar`、`date`、`time`、`email`、`url`、`search`
     *   地理位置 `Geolocation`
     *   多任务 `webworker`
@@ -343,6 +343,18 @@ outline: deep
     *   页面头部像下面一样加入一个`manifest`的属性；
     *   在`cache.manifest`文件的编写离线存储的资源
     *   在离线状态时，操作`window.applicationCache`进行需求实现
+
+```
+CACHE MANIFEST
+#v0.11
+CACHE:
+js/app.js
+css/style.css
+NETWORK:
+resourse/logo.png
+FALLBACK:
+/offline.html
+```
 
 ### 11 浏览器是怎么对`HTML5`的离线储存资源进行管理和加载的呢
 
@@ -471,11 +483,56 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 
 有几种方法可以实现一个圆形的可点击区域：
 
-1.  使用 SVG（可缩放矢量图形）：可以使用 SVG 元素 `<circle>` 创建一个圆形，并通过添加事件监听器实现点击功能。
+1. 使用 SVG（可缩放矢量图形）：可以使用 SVG 元素 `<circle>` 创建一个圆形，并通过添加事件监听器实现点击功能。
 
-2.  使用 CSS `border-radius`：通过设置一个具有相等宽度和高度的元素，并将 border-radius 属性设置为 50% 可以创建一个圆形区域
+    ```jsx
+      <svg>
+        <circle cx="50" cy="50" r="50" onclick="handleClick()"></circle>
+      </svg>
+    
+      ```
 
-3.  使用纯 JavaScript 实现：通过计算鼠标点击的坐标与圆心的距离，判断点击位置是否在圆形区域内。
+2. 使用 CSS `border-radius`：通过设置一个具有相等宽度和高度的元素，并将 border-radius 属性设置为 50% 可以创建一个圆形区域
+   ```jsx
+   <div class="circle" onclick="handleClick()"></div>
+    ```
+    ```css
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    ```
+
+3. 使用纯 JavaScript 实现：通过计算鼠标点击的坐标与圆心的距离，判断点击位置是否在圆形区域内。
+   ```jsx
+   <div id="circle" onclick="handleClick()"></div>
+    ```
+    ```css
+    #circle {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    ```
+    ```jsx
+    function handleClick(event) {
+        var circle = document.getElementById("circle");
+        var circleRect = circle.getBoundingClientRect();
+        var circleCenterX = circleRect.left + circleRect.width / 2;
+        var circleCenterY = circleRect.top + circleRect.height / 2;
+        var clickX = event.clientX;
+        var clickY = event.clientY;
+        var distance = Math.sqrt(
+            Math.pow(clickX - circleCenterX, 2) + Math.pow(clickY - circleCenterY, 2)
+        );
+        if (distance <= circleRect.width / 2) {
+            // 点击在圆形区域内
+            // 执行相应操作
+        }
+    }
+    ```
 
 ### 22 网页验证码是干嘛的，是为了解决什么安全问题
 
@@ -488,7 +545,17 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 
 这样，网页验证码有效地提高了网站和应用程序的安全性，防止了各种恶意行为的发生。
 
-### 23 viewport
+### 23 viewport 视口
+```jsx
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  // width    设置viewport宽度，为一个正整数，或字符串‘device-width’
+  // device-width  设备宽度
+  // height   设置viewport高度，一般设置了宽度，会自动解析出高度，可以不用设置
+  // initial-scale    默认缩放比例（初始缩放比例），为一个数字，可以带小数
+  // minimum-scale    允许用户最小缩放比例，为一个数字，可以带小数
+  // maximum-scale    允许用户最大缩放比例，为一个数字，可以带小数
+  // user-scalable    是否允许手动缩放
+```
 
 *   延伸提问
     *   怎样处理 移动端 `1px` 被 渲染成 `2px`问题？
@@ -529,7 +596,40 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 *   对普通的网站有一个统一的思路，就是尽量向前端优化、减少数据库操作、减少磁盘`IO`
 
 ### 25 meta viewport 相关
-
+```jsx
+<!DOCTYPE html>  <!--H5标准声明，使用 HTML5 doctype，不区分大小写-->
+<head lang=”en”> <!--标准的 lang 属性写法-->
+<meta charset=’utf-8′>    <!--声明文档使用的字符编码-->
+<meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″/>   <!--优先使用 IE 最新版本和 Chrome-->
+<meta name=”description” content=”不超过150个字符”/>       <!--页面描述-->
+<meta name=”keywords” content=””/>     <!-- 页面关键词-->
+<meta name=”author” content=”name, email@gmail.com”/>    <!--网页作者-->
+<meta name=”robots” content=”index,follow”/>      <!--搜索引擎抓取-->
+<meta name=”viewport” content=”initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no”> <!--为移动设备添加 viewport-->
+<meta name=”apple-mobile-web-app-title” content=”标题”> <!--iOS 设备 begin-->
+<meta name=”apple-mobile-web-app-capable” content=”yes”/>  <!--添加到主屏后的标题（iOS 6 新增）
+是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏-->
+<meta name=”apple-itunes-app” content=”app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL”>
+<!--添加智能 App 广告条 Smart App Banner（iOS 6+ Safari）-->
+<meta name=”apple-mobile-web-app-status-bar-style” content=”black”/>
+<meta name=”format-detection” content=”telphone=no, email=no”/>  <!--设置苹果工具栏颜色-->
+<meta name=”renderer” content=”webkit”> <!-- 启用360浏览器的极速模式(webkit)-->
+<meta http-equiv=”X-UA-Compatible” content=”IE=edge”>     <!--避免IE使用兼容模式-->
+<meta http-equiv=”Cache-Control” content=”no-siteapp” />    <!--不让百度转码-->
+<meta name=”HandheldFriendly” content=”true”>     <!--针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓-->
+<meta name=”MobileOptimized” content=”320″>   <!--微软的老式浏览器-->
+<meta name=”screen-orientation” content=”portrait”>   <!--uc强制竖屏-->
+<meta name=”x5-orientation” content=”portrait”>    <!--QQ强制竖屏-->
+<meta name=”full-screen” content=”yes”>              <!--UC强制全屏-->
+<meta name=”x5-fullscreen” content=”true”>       <!--QQ强制全屏-->
+<meta name=”browsermode” content=”application”>   <!--UC应用模式-->
+<meta name=”x5-page-mode” content=”app”>   <!-- QQ应用模式-->
+<meta name=”msapplication-tap-highlight” content=”no”>    <!--windows phone 点击无高亮
+设置页面不缓存-->
+<meta http-equiv=”pragma” content=”no-cache”>
+<meta http-equiv=”cache-control” content=”no-cache”>
+<meta http-equiv=”expires” content=”0″>
+```
 ### 26 你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?
 
 *   `IE` 使用的是 `Trident` 内核。
@@ -582,8 +682,8 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 
 `src`和`href`是 HTML 中两个常见的属性，它们有以下区别：
 
-*   `src`属性（source）用于指定要嵌入到当前文档中的外部资源的位置。例如，`<script src="script.js"></script>`用于引入一个外部的 JavaScript 文件，或者`<img src="image.jpg" alt="Image">`用于显示一个外部的图像文件。浏览器在解析到带有`src`属性的元素时，会暂停当前文档的加载和解析，去下载并执行或显示指定的资源。
-*   `href`属性（hypertext reference）用于建立当前文档和引用资源之间的关联。它通常用于链接到其他文档或外部资源，例如`<a href="https://www.example.com">Link</a>`用于创建一个指向外部网页的链接，或者`<link href="styles.css" rel="stylesheet">`用于引入外部的 CSS 样式表。浏览器在解析到带有`href`属性的元素时，会同时进行当前文档和引用资源的加载和处理，而不会阻塞当前文档的解析。
+*   **`src`属性（source）用于指定要嵌入到当前文档中的外部资源的位置。**例如，`<script src="script.js"></script>`用于引入一个外部的 JavaScript 文件，或者`<img src="image.jpg" alt="Image">`用于显示一个外部的图像文件。浏览器在解析到带有`src`属性的元素时，会暂停当前文档的加载和解析，去下载并执行或显示指定的资源。
+*   **`href`属性（hypertext reference）用于建立当前文档和引用资源之间的关联。**它通常用于链接到其他文档或外部资源，例如`<a href="https://www.example.com">Link</a>`用于创建一个指向外部网页的链接，或者`<link href="styles.css" rel="stylesheet">`用于引入外部的 CSS 样式表。浏览器在解析到带有`href`属性的元素时，会同时进行当前文档和引用资源的加载和处理，而不会阻塞当前文档的解析。
 
 **总结来说：**
 
@@ -708,6 +808,23 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 3.  请求头和消息实体之间有一个 **CRLF 分隔**
 4.  根据实际请求需要可能包含一个**消息实体** 一个请求报文例子如下：
 
+```
+GET /Protocols/rfc2616/rfc2616-sec5.html HTTP/1.1
+Host: www.w3.org
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36
+Referer: https://www.google.com.hk/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie: authorstyle=yes
+If-None-Match: "2cc8-3e3073913b100"
+If-Modified-Since: Wed, 01 Sep 2004 13:24:52 GMT
+
+name=qiu&age=25
+```
+
 ### 37 HTTP response 报文结构是怎样的
 
 *   首行是状态行包括：**HTTP 版本，状态码，状态描述**，后面跟一个 CRLF
@@ -716,6 +833,22 @@ W3C 标准是由 W3C 组织制定和推广的一系列技术标准，旨在推�
 *   最后是一个可能的**消息实体**
 
 响应报文例子如下：
+```
+HTTP/1.1 200 OK
+Date: Tue, 08 Jul 2014 05:28:43 GMT
+Server: Apache/2
+Last-Modified: Wed, 01 Sep 2004 13:24:52 GMT
+ETag: "40d7-3e3073913b100"
+Accept-Ranges: bytes
+Content-Length: 16599
+Cache-Control: max-age=21600
+Expires: Tue, 08 Jul 2014 11:28:43 GMT
+P3P: policyref="http://www.w3.org/2001/05/P3P/p3p.xml"
+Content-Type: text/html; charset=iso-8859-1
+
+{"name": "qiu", "age": 25}
+
+```
 
 ### 38 title 与 h1 的区别、b 与 strong 的区别、i 与 em 的区别
 
@@ -951,7 +1084,7 @@ CSS3 引入了许多新特性，以下是其中一些常见的新特性：
 
 1.  `block`：将元素转换为块状元素，独占一行，可设置宽度、高度、边距等属性。
 2.  `inline`：将元素转换为行内元素，不独占一行，只占据内容所需的空间，无法设置宽度、高度等块级属性。
-3.  `none`：设置元素不可见，在渲染时将其完全隐藏，不占据任何空间。
+3.  `none`：设置元素不可见，**在渲染时将其完全隐藏，不占据任何空间。**
 4.  `inline-block`：使元素既具有行内元素的特性（不独占一行），又具有块级元素的特性（可设置宽度、高度等属性），可以看作是行内块状元素。
 5.  `list-item`：将元素作为列表项显示，常用于有序列表（`<ol>`）和无序列表（`<ul>`）中，会添加列表标记。
 6.  `table`：将元素作为块级表格显示，常用于构建表格布局，类似于`<table>`元素。
@@ -1011,12 +1144,12 @@ BFC（Block Formatting Context）是 CSS 中的一种渲染规范，用于决定
 
 1.  BFC 的创建条件：触发 BFC 的条件包括元素的`float`属性不为`none`、`position`属性为`absolute`或`fixed`、`display`属性为`inline-block`、`table-cell`、`table-caption`等，以及通过特定的 CSS 属性（如`overflow`）进行触发。
 2.  BFC 的特性：
-    *   内部的块级盒子会在垂直方向上一个接一个地放置。
-    *   相邻的两个块级盒子的垂直外边距会发生合并。
+    *   **内部的块级盒子会在垂直方向上一个接一个地放置。**
+    *   **相邻的两个块级盒子的垂直外边距会发生合并。**
     *   BFC 的区域不会与浮动元素重叠。
     *   BFC 在页面布局时会考虑浮动元素。
     *   BFC 可以包含浮动元素，并计算其高度。
-    *   BFC 的边界会阻止边距重叠。
+    *   **BFC 的边界会阻止边距重叠。margin 塌陷**
 3.  BFC 的应用：
     *   清除浮动：创建一个父级元素成为 BFC，可以清除其内部浮动的影响，避免父元素塌陷。
     *   创建自适应的两栏布局：通过将两个列容器设置为 BFC，可以避免它们相互影响。
@@ -1177,6 +1310,32 @@ CSS 选择器的权重规则可以总结如下：
 当应用多个选择器到同一个元素时，根据上述规则计算各个选择器的权重，具有较高权重的样式将被应用。如果存在权重相同的情况，则根据样式规则的先后顺序来决定哪个样式生效，后声明的样式会覆盖先声明的样式。
 
 下面是一个权重计算的示例：
+```css
+/* 权重为 1 */
+div {
+}
+
+/* 权重为 10 */
+.class1 {
+}
+
+/* 权重为 100 */
+#id1 {
+}
+
+/* 权重为 101 (100 + 1) */
+#id1 div {
+}
+
+/* 权重为 11 (10 + 1) */
+.class1 div {
+}
+
+/* 权重为 21 (10 + 10 + 1) */
+.class1 .class2 div {
+}
+
+```
 
 根据权重的计算规则，选择器的权重越高，其样式优先级越高，将更有可能应用到对应的元素上。
 
@@ -1222,6 +1381,28 @@ CSS 选择器的权重规则可以总结如下：
 *   `animation`：动画定义了动作的每一帧（`@keyframes`）有什么效果，包括`animation-name`，`animation-duration`、`animation-timing-function`、`animation-delay`、`animation-iteration-count`、`animation-direction`
 
 以下是一个使用 CSS3 动画实现旋转的示例：
+```css
+/* 定义动画关键帧 */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 应用动画到元素 */
+.element {
+  animation-name: rotate; /* 指定动画名称 */
+  animation-duration: 3s; /* 动画持续时间 */
+  animation-timing-function: linear; /* 动画速度曲线 */
+  animation-delay: 0s; /* 动画延迟时间 */
+  animation-iteration-count: infinite; /* 动画重复次数，这里设置为无限循环 */
+  animation-direction: normal; /* 动画播放方向 */
+}
+
+```
 
 ### 27 base64 的原理及优缺点
 
@@ -1250,6 +1431,33 @@ Base64 是一种将二进制数据编码为 ASCII 字符的方法，通过将二
 ### 28 几种常见的 CSS 布局
 
 #### 流体布局
+```css
+.left {
+    float: left;
+    width: 100px;
+    height: 200px;
+    background: red;
+}
+.right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+.main {
+    margin-left: 120px;
+    margin-right: 220px;
+    height: 200px;
+    background: green;
+}
+```
+```jsx
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+</div>
+```
 
 上述代码实现了一个基本的流体布局，其中左侧 (`.left`) 和右侧 (`.right`) 是固定宽度和高度的浮动元素，中间部分 (`.main`) 是流动的内容区域。
 
@@ -1262,6 +1470,13 @@ Base64 是一种将二进制数据编码为 ASCII 字符的方法，通过将二
 这样设置后，左侧和右侧的浮动元素会占据固定的宽度和高度，并排在一起。中间的内容区域会流动到浮动元素的下方，填充剩余的空间。这样就实现了一个基本的流体布局，可以根据容器的大小自动适应屏幕或容器的宽度。
 
 需要注意的是，浮动元素可能会导致父容器的高度塌陷，可以通过在父容器上添加清除浮动的样式来解决这个问题，例如在容器上添加`clearfix`类：
+```css
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
 
 以上是一个简单的流体布局的示例，实际应用中可能会结合其他 CSS 属性和技巧来实现更复杂的布局效果。
 
@@ -1270,6 +1485,38 @@ Base64 是一种将二进制数据编码为 ASCII 字符的方法，通过将二
 *   要求：三列布局；中间主体内容前置，且宽度自适应；两边内容定宽
 *   好处：重要的内容放在文档流前面可以优先渲染
 *   原理：利用相对定位、浮动、负边距布局，而不添加额外标签
+
+```css
+  .container {
+      padding-left: 150px;
+      padding-right: 190px;
+  }
+  .main {
+      float: left;
+      width: 100%;
+  }
+  .left {
+      float: left;
+      width: 190px;
+      margin-left: -100%;
+      position: relative;
+      left: -150px;
+  }
+  .right {
+      float: left;
+      width: 190px;
+      margin-left: -190px;
+      position: relative;
+      right: -190px;
+  }
+```
+```jsx
+<div class="container">
+	<div class="main"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+</div>
+```
 
 上述代码实现了一个圣杯布局，具有三列布局，其中中间的主体内容前置且宽度自适应，两侧内容具有固定宽度。
 
@@ -1288,6 +1535,42 @@ Base64 是一种将二进制数据编码为 ASCII 字符的方法，通过将二
 
 *   双飞翼布局：对圣杯布局（使用相对定位，对以后布局有局限性）的改进，消除相对定位布局
 *   原理：主体元素上设置左右边距，预留两翼位置。左右两栏使用浮动和负边距归位，消除相对定位。
+
+```css
+.container {
+    /*padding-left:150px;*/
+    /*padding-right:190px;*/
+}
+.main-wrap {
+    width: 100%;
+    float: left;
+}
+.main {
+    margin-left: 150px;
+    margin-right: 190px;
+}
+.left {
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    /*position: relative;*/
+    /*left:-150px;*/
+}
+.right {
+    float: left;
+    width: 190px;
+    margin-left: -190px;
+    /*position:relative;*/
+    /*right:-190px;*/
+}
+```
+```jsx
+<div class="content">
+    <div class="main"></div>
+</div>
+<div class="left"></div>
+<div class="right"></div>
+```
 
 上述代码实现了一个双飞翼布局，与圣杯布局相比，双飞翼布局消除了相对定位，使布局更加简洁。
 
@@ -1317,10 +1600,10 @@ Sass, Less, 和 Stylus 是三种常用的 CSS 预处理器，它们在功能和�
 
 ### 30 postcss 的作用
 
-*   可以直观的理解为：它就是一个平台。为什么说它是一个平台呢？因为我们直接用它，感觉不能干什么事情，但是如果让一些插件在它上面跑，那么将会很强大
-*   `PostCSS` 提供了一个解析器，它能够将 `CSS` 解析成抽象语法树
-*   通过在 `PostCSS` 这个平台上，我们能够开发一些插件，来处理我们的`CSS`，比如热门的：`autoprefixer`
-*   `postcss`可以对 sass 处理过后的`css`再处理 最常见的就是`autoprefixer`
+> *   可以直观的理解为：它就是一个平台。为什么说它是一个平台呢？因为我们直接用它，感觉不能干什么事情，但是如果让一些插件在它上面跑，那么将会很强大
+> *   `PostCSS` 提供了一个解析器，它能够将 `CSS` 解析成抽象语法树
+> *   通过在 `PostCSS` 这个平台上，我们能够开发一些插件，来处理我们的`CSS`，比如热门的：`autoprefixer`
+> *   `postcss`可以对 sass 处理过后的`css`再处理 最常见的就是`autoprefixer`
 
 `PostCSS` 是一个用于转换 `CSS` 的工具，它提供了一个插件化的架构，可以通过加载各种插件来处理 `CSS`。主要作用包括：
 
@@ -1329,7 +1612,7 @@ Sass, Less, 和 Stylus 是三种常用的 CSS 预处理器，它们在功能和�
 3.  **代码优化和压缩**：`PostCSS` 的插件可以用于优化和压缩 `CSS` 代码，删除不必要的空格、注释、重复规则等，以减小文件大小并提高加载速度。
 4.  **使用未来的 CSS 语法**：`PostCSS` 可以支持使用未来的 `CSS` 语法和功能，例如使用 `CSS Variables`、`CSS Modules`、`CSS Grid` 等。通过一些插件，可以在现有浏览器中使用这些新特性，而无需等待浏览器的更新。
 
-总之，`PostCSS` 提供了一个灵活的平台和插件生态系统，可以对 `CSS` 进行各种转换和优化，使开发者能够更好地编写和管理样式代码，并兼容不同的浏览器和未来的 `CSS` 标准。
+> 总之，`PostCSS` 提供了一个灵活的平台和插件生态系统，可以对 `CSS` 进行各种转换和优化，使开发者能够更好地编写和管理样式代码，并兼容不同的浏览器和未来的 `CSS` 标准。
 
 ### 31 css 样式（选择器）的优先级
 
@@ -4296,7 +4579,7 @@ Vue 的双向绑定数据的原理是基于`数据劫持和发布者-订阅者�
 9.  压缩文件：压缩 JavaScript、CSS、字体、图片等静态资源文件，减小文件大小。
     
 10.  优化 CSS Sprite：将多个小图标合并为一个大图，并通过 CSS 进行定位，减少图片请求。
-    
+
 
 11.  使用 iconfont：将图标字体作为替代图像，减少图片请求并提高渲染性能。
 
