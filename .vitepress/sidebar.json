@@ -832,5 +832,118 @@
       "text": "面试指南篇",
       "link": "/Interview/interview"
     }
+  ],
+  "/Algorithm/": [
+    {
+      "text": "基础算法",
+      "items": [
+        {
+          "text": "01.数组，栈，队列",
+          "link": "/Algorithm/1/01.数组，栈，队列"
+        },
+        {
+          "text": "02.链表",
+          "link": "/Algorithm/1/02.链表"
+        },
+        {
+          "text": "03.树",
+          "link": "/Algorithm/1/03.树"
+        },
+        {
+          "text": "04.哈希表",
+          "link": "/Algorithm/1/04.哈希表"
+        },
+        {
+          "text": "05.双指针",
+          "link": "/Algorithm/1/05.双指针"
+        },
+        {
+          "text": "06.图",
+          "link": "/Algorithm/1/06.图"
+        },
+        {
+          "text": "07.模拟与枚举",
+          "link": "/Algorithm/1/07.模拟与枚举"
+        },
+        {
+          "text": "08.排序（加餐）",
+          "link": "/Algorithm/1/08.排序（加餐）"
+        }
+      ]
+    },
+    {
+      "text": "进阶算法",
+      "items": [
+        {
+          "text": "01.二分",
+          "link": "/Algorithm/2/01.二分"
+        },
+        {
+          "text": "02.滑动窗口",
+          "link": "/Algorithm/2/02.滑动窗口"
+        },
+        {
+          "text": "03.搜索（BFS，DFS，回溯）专题",
+          "link": "/Algorithm/2/03.搜索（BFS，DFS，回溯）专题"
+        },
+        {
+          "text": "04.动态规划",
+          "link": "/Algorithm/2/04.动态规划"
+        },
+        {
+          "text": "05.背包",
+          "link": "/Algorithm/2/05.背包"
+        },
+        {
+          "text": "06.分治",
+          "link": "/Algorithm/2/06.分治"
+        },
+        {
+          "text": "07.贪心",
+          "link": "/Algorithm/2/07.贪心"
+        },
+        {
+          "text": "08.位运算",
+          "link": "/Algorithm/2/08.位运算"
+        }
+      ]
+    },
+    {
+      "text": "强化算法",
+      "items": [
+        {
+          "text": "01.Trie",
+          "link": "/Algorithm/3/01.Trie"
+        },
+        {
+          "text": "02.并查集",
+          "link": "/Algorithm/3/02.并查集"
+        },
+        {
+          "text": "03.剪枝",
+          "link": "/Algorithm/3/03.剪枝"
+        },
+        {
+          "text": "04.字符串匹配（BF&RK&KMP）",
+          "link": "/Algorithm/3/04.字符串匹配（BF&RK&KMP）"
+        },
+        {
+          "text": "05.堆",
+          "link": "/Algorithm/3/05.堆"
+        },
+        {
+          "text": "06.跳表",
+          "link": "/Algorithm/3/06.跳表"
+        },
+        {
+          "text": "07.高频面试题",
+          "link": "/Algorithm/3/07.高频面试题"
+        },
+        {
+          "text": "08.线段树（加餐）",
+          "link": "/Algorithm/3/08.线段树（加餐）"
+        }
+      ]
+    }
   ]
 }
